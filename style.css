@@ -1,0 +1,214 @@
+/* body {
+    background-color: cadetblue;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 200, 0);
+    border-radius: 50%;
+    border: 2px solid rgb(255, 196, 0);
+    box-shadow: 0px 0px 200px 70px rgb(255, 208, 0);
+    margin-top: 200px;
+    margin-left: -300px;
+    animation: beka 10s infinite;
+    transition: .1s;
+    position: relative;
+}
+
+@keyframes beka {
+    0% {
+        left: 300px;
+        top: -20px;
+    }
+    1%{
+        left: 300px;
+        top: -20px;
+    }
+    100%{
+        left: 1200px;
+        top: -20px;
+    }
+} */
+
+body{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.chess{
+    width: 1030px;
+    height: 1030px;
+    background-image: url(https://media.istockphoto.com/id/913630044/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D1%87%D0%B5%D1%80%D0%BD%D0%B0%D1%8F-%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F-%D0%B4%D0%BE%D1%81%D0%BA%D0%B0-%D1%81-%D0%B1%D1%83%D0%BA%D0%B2%D0%B0%D0%BC%D0%B8-%D0%B8-%D1%86%D0%B8%D1%84%D1%80%D0%B0%D0%BC%D0%B8-%D1%84%D0%BE%D0%BD-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%B8%D0%BB%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8.jpg?s=1024x1024&w=is&k=20&c=jMmI80Pvii1w0-gxVBTYiJMJFB9e2p0L_KhmThy5Eb0=);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.chess .rook{
+    width: 110px;
+    height: 110px;
+    background-image: url(https://thumb.tildacdn.com/tild3966-6637-4338-b531-353039373466/-/format/webp/photo.png);
+    background-size: cover;
+    background-position: center;
+    animation: rook 5s infinite;
+    position: relative;
+    margin-top:190px;
+}
+
+@keyframes rook{
+    0%{
+        left: 100px;
+    }
+    1%{
+        left: 100px;
+    }
+    100%{
+        left: 850px;
+    }
+}
+
+.chess .pawn{
+    width: 110px;
+    height: 110px;
+    background-image: url(https://thumb.tildacdn.com/tild6533-6139-4730-a138-663962613761/-/resize/540x/-/format/webp/2-min.png);
+    background-size: cover;
+    background-position: center;
+    animation: pawn 5s infinite;
+    position: relative;
+    margin-top:300px;
+    margin-left: 80px;
+}
+
+@keyframes pawn{
+    0%{
+        bottom: 100px;
+    }
+    1%{
+        bottom: 100px;
+    }
+    100%{
+        bottom: 190px;
+    }
+}
+
+.chess .horse{
+    width: 110px;
+    height: 110px;
+    background-image: url(https://render.ru/xen/attachments/2-png.261816/);
+    background-size: cover;
+    background-position: center;
+    animation: horse 5s infinite;
+    position: relative;
+    margin-top: -90px;
+    margin-left: 300px;
+}
+
+@keyframes horse{
+    0%{
+        left: 0px;
+    }
+    1%{
+        left: 0px;
+    }
+    70%{
+        left: 220px;
+        bottom: 0px;
+    }
+    100%{
+        left: 220px;
+        bottom: 110px;
+    }
+}
+
+.chess .elephant{
+    width: 140px;
+    height: 140px;
+    background-image: url(https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413422_1280.png);
+    background-size: cover;
+    background-position: center;
+    animation: elephant 5s infinite;
+    position: relative;
+    margin-top: -670px;
+    margin-left: 718px;
+}
+
+@keyframes elephant{
+    0%{
+        right: 0px;
+        top: 0px;
+    }
+    1%{
+        right: 0px;
+        top: 0px;
+    }
+    100%{
+        right: 650px;
+        top: 650px;
+    }
+}
+
+.chess .queens{
+    width: 120px;
+    height: 120px;
+    background-image: url(https://thumb.tildacdn.com/tild3039-6462-4664-b562-666433626234/-/format/webp/5-min.png);
+    background-size: cover;
+    background-position: center;
+    animation: queens 5s infinite;
+    position: relative;
+    margin-top: 630px;
+    margin-left: 830px;
+}
+
+@keyframes queens{
+    0%{
+        bottom: 0px;
+    }
+    1%{
+        bottom: 0px;
+    }
+    30%{
+        bottom: 210px;
+    }
+    31%{
+        right: 0px;
+        bottom: 210px;
+    }
+    100%{
+        right: 530px;
+        bottom: 750px;
+    }
+}
+
+.chess .karol{
+    width: 130px;
+    height: 130px;
+    background-image: url(https://cdn.pixabay.com/photo/2018/05/19/12/48/chess-3413412_960_720.png);
+    background-size: cover;
+    background-position: center;
+    animation: karol 5s infinite;
+    position: relative;
+    margin-top: -120px;
+    margin-left: 400px;
+}
+
+@keyframes karol{
+    0%{
+        left: 0px;
+    }
+    1%{
+        left: 0px;
+    }
+    50%{
+        left: 100px;
+    }
+    51%{
+        left: 100px;
+        bottom: 0px;
+    }
+    100%{
+        left: 210px;
+        bottom: 110px;
+    }
+}
